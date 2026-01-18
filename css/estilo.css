@@ -193,7 +193,7 @@ body {
 }
 
 .info {
-    padding: 150px;    /* menos espacio */
+    padding: 30px;    /* ajustado para que no quede espacio */
     width: 70%;
 }
 
@@ -286,6 +286,7 @@ input:checked + .slider:before {
     border-radius: 10px;
     transition: .3s;
 }
+
 /* ANIMACIONES AL SCROLL */
 .animar {
     opacity: 0;
@@ -298,3 +299,67 @@ input:checked + .slider:before {
     transform: translateY(0);
 }
 
+
+/* ========== RESPONSIVE MOVIL ========== */
+@media screen and (max-width: 768px) {
+
+    .header {
+        height: 120px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 200px;
+        max-height: 120px;
+    }
+
+    .menu a {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .main {
+        padding-top: 120px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .seccion {
+        padding: 60px 20px;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr; /* 1 producto por fila en móvil */
+        gap: 20px;
+    }
+
+    .producto img {
+        height: 350px;
+    }
+
+    .modal-contenido {
+        width: 90%;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .modal-contenido img {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ordenar {
+        padding: 12px;
+    }
+}
