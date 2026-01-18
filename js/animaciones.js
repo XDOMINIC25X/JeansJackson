@@ -86,3 +86,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// ===== MENU HAMBURGUESA =====
+const hamburguesa = document.getElementById("hamburguesa");
+const menu = document.getElementById("menu");
+
+hamburguesa.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+// cerrar menú al hacer click en un link
+menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+});
